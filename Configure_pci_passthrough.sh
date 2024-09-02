@@ -75,6 +75,13 @@ echo "options vfio-pci ids=$concatID disable_vga=1"> /etc/modprobe.d/vfio.conf
 
 
 # Updates the changes, computer should now restart and the selected GPU will no longer be available to proxmox. 
+echo "Updates made, computer will now restart" 
 update-initramfs -u
 reset
+
+reboot
+
+
+
+
 
